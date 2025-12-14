@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://b1ak5ygn7wto1"
+path="res://.godot/imported/Welcome.dialogue-b0369423d04c0a07a4dbc8bc57c3816e.tres"
+
+[deps]
+
+source_file="res://Home Screen/Welcome.dialogue"
+dest_files=["res://.godot/imported/Welcome.dialogue-b0369423d04c0a07a4dbc8bc57c3816e.tres"]
+
+[params]
+
+defaults=true
