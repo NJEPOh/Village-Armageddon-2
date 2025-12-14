@@ -1,4 +1,4 @@
-extends TextureRect
+extends Panel 
 
 var buttons = ["ui_1", "ui_2", "ui_3", "ui_4"]
 
