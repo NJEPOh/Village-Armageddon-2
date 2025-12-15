@@ -175,7 +175,7 @@ func _saat_masuk(body: Node2D) -> void:
 
 	
 	if (body.name == "Finish"):
-		$"Finsih/Finish Img".show()
+		$"Finish/Finish Word".show()
 		$Start/Player.set_process_input(false)
 		$Start/Player.set_process(false)
 		
@@ -184,6 +184,7 @@ func _saat_masuk(body: Node2D) -> void:
 		$Sound/Walking.set_process_input(false)
 		$Finish/CollisionShape2D.queue_free()
 		$Welcome.hide()
+		$Start/Player.hide()
 		
 		# Membuat Timer secara dinamis
 		 # Buat Timer secara dinamis
