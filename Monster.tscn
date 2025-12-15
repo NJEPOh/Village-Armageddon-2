@@ -1,10 +1,10 @@
 [gd_scene load_steps=10 format=3 uid="uid://cagpxoug1lv7i"]
 
-[ext_resource type="Texture2D" uid="uid://pxwy3onvt07m" path="res://Cave/Slime2_Run_body.png" id="1_d3k5b"]
-[ext_resource type="Script" path="res://monster.gd" id="1_refli"]
+[ext_resource type="Script" uid="uid://blr1nh35k66kp" path="res://monster.gd" id="1_refli"]
+[ext_resource type="Texture2D" uid="uid://dnj8vwj1neb2g" path="res://Cave/WW.png" id="2_ssiii"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ww1d2"]
-radius = 7.0
+radius = 18.027756
 
 [sub_resource type="Animation" id="Animation_1hspe"]
 length = 0.001
@@ -95,11 +95,11 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_xducw"]
 _data = {
-"RESET": SubResource("Animation_1hspe"),
-"walkDown": SubResource("Animation_3502g"),
-"walkLeft": SubResource("Animation_8vtuj"),
-"walkRight": SubResource("Animation_8dmkx"),
-"walkUp": SubResource("Animation_i586t")
+&"RESET": SubResource("Animation_1hspe"),
+&"walkDown": SubResource("Animation_3502g"),
+&"walkLeft": SubResource("Animation_8vtuj"),
+&"walkRight": SubResource("Animation_8dmkx"),
+&"walkUp": SubResource("Animation_i586t")
 }
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
@@ -110,15 +110,15 @@ metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(34, 33)
-texture = ExtResource("1_d3k5b")
+texture = ExtResource("2_ssiii")
 hframes = 8
 vframes = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(35, 34)
+position = Vector2(38, 24)
 shape = SubResource("CircleShape2D_ww1d2")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
-"": SubResource("AnimationLibrary_xducw")
+&"": SubResource("AnimationLibrary_xducw")
 }

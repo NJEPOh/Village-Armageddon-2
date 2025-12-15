@@ -63,13 +63,30 @@ func _saat_masuk(body: Node2D) -> void:
 		hp = hp-1
 		print(hp)
 		print("nabrak")
-		
-	if body.name.begins_with("WW"):
-		var num = body.name.substr(2).to_int()
-		if num >= 1 and num <= 34:
-			hp -= 1
-			print(hp)
-			print("nabrak")
+	if (body.name == "CharacterBody2D8"):
+		hp = hp-1
+		print(hp)
+		print("nabrak")
+	if (body.name == "CharacterBody2D9"):
+		hp = hp-1
+		print(hp)
+		print("nabrak")
+	if (body.name == "CharacterBody2D10"):
+		hp = hp-1
+		print(hp)
+		print("nabrak")
+	if (body.name == "CharacterBody2D11"):
+		hp = hp-1
+		print(hp)
+		print("nabrak")
+	if (body.name == "CharacterBody2D12"):
+		hp = hp-1
+		print(hp)
+		print("nabrak")
+	if (body.name == "CharacterBody2D13"):
+		hp = hp-1
+		print(hp)
+		print("nabrak")
 
 		
 	if (body.name == "Lock 1" and not has_run1):

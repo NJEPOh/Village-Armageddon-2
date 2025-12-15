@@ -1,4 +1,4 @@
-[gd_scene load_steps=76 format=4 uid="uid://c6h25iyu8or1y"]
+[gd_scene load_steps=79 format=4 uid="uid://c6h25iyu8or1y"]
 
 [ext_resource type="Texture2D" uid="uid://ctqoqgv8dwwgp" path="res://Cave/Ground.jpg" id="1_cqvx5"]
 [ext_resource type="Script" uid="uid://bv85fhdq6f852" path="res://Main.gd" id="1_m0mwe"]
@@ -14,10 +14,8 @@
 [ext_resource type="Texture2D" uid="uid://crkx43jg1bfit" path="res://Cave/Lock_01.png" id="7_wyvjk"]
 [ext_resource type="Script" uid="uid://dkwiv6whwahsa" path="res://Lock.gd" id="8_413cu"]
 [ext_resource type="PackedScene" uid="uid://bf3ui78iw3aqr" path="res://HomeScreen.tscn" id="8_j4pol"]
-[ext_resource type="PackedScene" uid="uid://xjm5gbcmt65r" path="res://node_2d.tscn" id="8_yw735"]
 [ext_resource type="Script" uid="uid://cax5by5pfo73v" path="res://lock_2.gd" id="10_6ipat"]
 [ext_resource type="Texture2D" uid="uid://e3fjcbfe354p" path="res://Cave/F.png" id="10_ooyls"]
-[ext_resource type="Texture2D" uid="uid://dfqp2mkm8f2ge" path="res://Cave/Tutorial.png" id="11_77umb"]
 [ext_resource type="Script" uid="uid://dj2c7qv4rah7q" path="res://lock_3.gd" id="11_113iw"]
 [ext_resource type="Script" uid="uid://b2bllron1ouhk" path="res://f.gd" id="11_ey0ky"]
 [ext_resource type="Script" uid="uid://nmujdqqw8dy4" path="res://Tutorial.gd" id="11_fyw38"]
@@ -35,11 +33,9 @@
 [ext_resource type="Script" uid="uid://bnftvc57guktc" path="res://quiz_3.gd" id="22_8j0x5"]
 [ext_resource type="Script" uid="uid://d27rem0d3nukl" path="res://f_7.gd" id="22_ey5ga"]
 [ext_resource type="Script" uid="uid://dj36lq814nstb" path="res://welcome.gd" id="28_2m60k"]
-[ext_resource type="Texture2D" uid="uid://df3mkhh0qqf4q" path="res://Home Screen/Welcome 1.png" id="28_m22ff"]
+[ext_resource type="Script" uid="uid://c6faa8vi15m3d" path="res://camera_2d.gd" id="28_xc54d"]
 [ext_resource type="Script" uid="uid://bm7kqs3qgg7je" path="res://quiz_4.gd" id="29_7gvu3"]
-[ext_resource type="Texture2D" uid="uid://bjyry6m6hm24j" path="res://Home Screen/Welcome 2.png" id="30_tcnu8"]
 [ext_resource type="Script" uid="uid://cocpaf55r5gvw" path="res://quiz_5.gd" id="31_ist6g"]
-[ext_resource type="Texture2D" uid="uid://baiigqey207rj" path="res://Home Screen/Welcome 3.png" id="31_qiruo"]
 [ext_resource type="Script" uid="uid://c5pwastqwsh8l" path="res://quiz_6.gd" id="33_7y7b7"]
 [ext_resource type="Script" uid="uid://kmnfxw0ob3h5" path="res://quiz_7.gd" id="35_txmf3"]
 [ext_resource type="FontFile" uid="uid://byukh0u431up0" path="res://Fonts/ari-w9500-display.ttf" id="37_pnh27"]
@@ -1115,6 +1111,9 @@ sources/0 = SubResource("TileSetAtlasSource_gshxh")
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2fb1q"]
 size = Vector2(24, 137)
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xc54d"]
+bg_color = Color(0, 0, 0, 1)
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pnue6"]
 size = Vector2(30, 143)
 
@@ -1219,6 +1218,24 @@ _data = {
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pnh27"]
 bg_color = Color(0, 0, 0, 1)
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ds8mp"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pbwgg"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ndmee"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lua15"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qirsl"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yw735"]
+bg_color = Color(0, 0, 0, 1)
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cnekk"]
 size = Vector2(146, 27)
 
@@ -1273,13 +1290,13 @@ layer_0/tile_data = PackedInt32Array(131074, 0, 0, 196610, 0, 1, 131075, 65536, 
 position = Vector2(1491, 1168)
 
 [node name="CharacterBody2D2" parent="Mobs" groups=["Objek"] instance=ExtResource("7_vpuo2")]
-position = Vector2(308, 1475)
+position = Vector2(1848, 3323)
 
 [node name="CharacterBody2D3" parent="Mobs" groups=["Objek"] instance=ExtResource("7_vpuo2")]
 position = Vector2(472, 705)
 
 [node name="CharacterBody2D4" parent="Mobs" groups=["Objek"] instance=ExtResource("7_vpuo2")]
-position = Vector2(1661, 579)
+position = Vector2(1393, 2694)
 
 [node name="CharacterBody2D5" parent="Mobs" groups=["Objek"] instance=ExtResource("7_vpuo2")]
 position = Vector2(1518, 1611)
@@ -1290,119 +1307,52 @@ position = Vector2(120, 506)
 [node name="CharacterBody2D7" parent="Mobs" groups=["Objek"] instance=ExtResource("7_vpuo2")]
 position = Vector2(1175, 1270)
 
-[node name="Mobs 2" type="Node2D" parent="."]
+[node name="CharacterBody2D8" parent="Mobs" groups=["Objek"] instance=ExtResource("7_vpuo2")]
+position = Vector2(208, 2019)
 
-[node name="WW" parent="Mobs 2" instance=ExtResource("8_yw735")]
-position = Vector2(110, 1943)
+[node name="CharacterBody2D9" parent="Mobs" groups=["Objek"] instance=ExtResource("7_vpuo2")]
+position = Vector2(202, 2482)
 
-[node name="WW2" parent="Mobs 2" instance=ExtResource("8_yw735")]
-position = Vector2(119, 2021)
+[node name="CharacterBody2D10" parent="Mobs" groups=["Objek"] instance=ExtResource("7_vpuo2")]
+position = Vector2(384, 3270)
 
-[node name="WW3" parent="Mobs 2" instance=ExtResource("8_yw735")]
-position = Vector2(195, 2003)
+[node name="CharacterBody2D11" parent="Mobs" groups=["Objek"] instance=ExtResource("7_vpuo2")]
+position = Vector2(1041, 3126)
 
-[node name="WW4" parent="Mobs 2" instance=ExtResource("8_yw735")]
-position = Vector2(289, 1968)
+[node name="CharacterBody2D12" parent="Mobs" groups=["Objek"] instance=ExtResource("7_vpuo2")]
+position = Vector2(1819, 2651)
 
-[node name="WW5" parent="Mobs 2" instance=ExtResource("8_yw735")]
-position = Vector2(225, 2097)
-
-[node name="WW6" parent="Mobs 2" instance=ExtResource("8_yw735")]
-position = Vector2(116, 2161)
-
-[node name="WW7" parent="Mobs 2" instance=ExtResource("8_yw735")]
-position = Vector2(425, 2421)
-
-[node name="WW8" parent="Mobs 2" instance=ExtResource("8_yw735")]
-position = Vector2(190, 2555)
-
-[node name="WW9" parent="Mobs 2" instance=ExtResource("8_yw735")]
-position = Vector2(321, 2701)
-
-[node name="WW10" parent="Mobs 2" instance=ExtResource("8_yw735")]
-position = Vector2(165, 2886)
-
-[node name="WW11" parent="Mobs 2" instance=ExtResource("8_yw735")]
-position = Vector2(390, 3036)
-
-[node name="WW12" parent="Mobs 2" instance=ExtResource("8_yw735")]
-position = Vector2(198, 3066)
-
-[node name="WW13" parent="Mobs 2" instance=ExtResource("8_yw735")]
-position = Vector2(440, 3279)
-
-[node name="WW14" parent="Mobs 2" instance=ExtResource("8_yw735")]
-position = Vector2(180, 3308)
-
-[node name="WW15" parent="Mobs 2" instance=ExtResource("8_yw735")]
-position = Vector2(250, 3441)
-
-[node name="WW16" parent="Mobs 2" instance=ExtResource("8_yw735")]
-position = Vector2(436, 3587)
-
-[node name="WW17" parent="Mobs 2" instance=ExtResource("8_yw735")]
-position = Vector2(213, 3610)
-
-[node name="WW18" parent="Mobs 2" instance=ExtResource("8_yw735")]
-position = Vector2(998, 3379)
-
-[node name="WW19" parent="Mobs 2" instance=ExtResource("8_yw735")]
-position = Vector2(1140, 3175)
-
-[node name="WW20" parent="Mobs 2" instance=ExtResource("8_yw735")]
-position = Vector2(951, 3136)
-
-[node name="WW21" parent="Mobs 2" instance=ExtResource("8_yw735")]
-position = Vector2(1080, 2918)
-
-[node name="WW22" parent="Mobs 2" instance=ExtResource("8_yw735")]
-position = Vector2(1355, 2780)
-
-[node name="WW23" parent="Mobs 2" instance=ExtResource("8_yw735")]
-position = Vector2(1670, 2694)
-
-[node name="WW24" parent="Mobs 2" instance=ExtResource("8_yw735")]
-position = Vector2(1794, 2886)
-
-[node name="WW25" parent="Mobs 2" instance=ExtResource("8_yw735")]
-position = Vector2(1667, 3043)
-
-[node name="WW26" parent="Mobs 2" instance=ExtResource("8_yw735")]
-position = Vector2(1793, 3301)
-
-[node name="WW27" parent="Mobs 2" instance=ExtResource("8_yw735")]
-position = Vector2(1668, 3417)
-
-[node name="WW28" parent="Mobs 2" instance=ExtResource("8_yw735")]
-position = Vector2(1797, 3593)
-
-[node name="WW29" parent="Mobs 2" instance=ExtResource("8_yw735")]
-position = Vector2(1612, 3667)
-
-[node name="WW30" parent="Mobs 2" instance=ExtResource("8_yw735")]
-position = Vector2(1757, 3873)
-
-[node name="WW31" parent="Mobs 2" instance=ExtResource("8_yw735")]
-position = Vector2(1578, 3860)
-
-[node name="WW32" parent="Mobs 2" instance=ExtResource("8_yw735")]
-position = Vector2(1388, 3596)
-
-[node name="WW33" parent="Mobs 2" instance=ExtResource("8_yw735")]
-position = Vector2(1310, 3961)
-
-[node name="WW34" parent="Mobs 2" instance=ExtResource("8_yw735")]
-position = Vector2(1762, 2195)
+[node name="CharacterBody2D13" parent="Mobs" groups=["Objek"] instance=ExtResource("7_vpuo2")]
+position = Vector2(1576, 3923)
 
 [node name="Lock" type="Node2D" parent="."]
 
 [node name="Lock 1" type="StaticBody2D" parent="Lock"]
+position = Vector2(1, 2)
 physics_material_override = SubResource("PhysicsMaterial_4th5l")
 script = ExtResource("7_lva52")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Lock/Lock 1"]
 position = Vector2(1422, 989.5)
 shape = SubResource("RectangleShape2D_2fb1q")
+
+[node name="Panel" type="Panel" parent="Lock/Lock 1/CollisionShape2D"]
+offset_left = -56.0
+offset_top = 18.5
+offset_right = 55.0
+offset_bottom = 46.5
+theme_override_styles/panel = SubResource("StyleBoxFlat_xc54d")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Lock/Lock 1/CollisionShape2D/Panel"]
+layout_mode = 0
+offset_left = -9.0
+offset_top = -6.0
+offset_right = 124.0
+offset_bottom = 34.0
+theme_override_fonts/normal_font = ExtResource("37_pnh27")
+text = "PRESS <F>"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Lock01" type="Sprite2D" parent="Lock/Lock 1"]
 position = Vector2(1421, 986)
@@ -1416,13 +1366,14 @@ position = Vector2(1422, 989.5)
 shape = SubResource("RectangleShape2D_pnue6")
 
 [node name="F" type="Sprite2D" parent="Lock/Lock 1"]
+visible = false
 position = Vector2(1422, 1017)
 scale = Vector2(0.55, 0.55)
 texture = ExtResource("10_ooyls")
 script = ExtResource("11_ey0ky")
 
 [node name="Lock 2" type="StaticBody2D" parent="Lock"]
-position = Vector2(159, -368)
+position = Vector2(-596, 1488)
 physics_material_override = SubResource("PhysicsMaterial_4th5l")
 script = ExtResource("10_6ipat")
 
@@ -1447,8 +1398,26 @@ scale = Vector2(0.55, 0.55)
 texture = ExtResource("10_ooyls")
 script = ExtResource("13_2pw3o")
 
+[node name="Panel" type="Panel" parent="Lock/Lock 2"]
+offset_left = 1366.0
+offset_top = 1004.0
+offset_right = 1477.0
+offset_bottom = 1032.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_xc54d")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Lock/Lock 2/Panel"]
+layout_mode = 0
+offset_left = -9.0
+offset_top = -6.0
+offset_right = 124.0
+offset_bottom = 34.0
+theme_override_fonts/normal_font = ExtResource("37_pnh27")
+text = "PRESS <F>"
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [node name="Lock 3" type="StaticBody2D" parent="Lock"]
-position = Vector2(351, -564)
+position = Vector2(258, 1007)
 physics_material_override = SubResource("PhysicsMaterial_4th5l")
 script = ExtResource("11_113iw")
 
@@ -1472,6 +1441,24 @@ position = Vector2(1421, 1025)
 scale = Vector2(0.55, 0.55)
 texture = ExtResource("10_ooyls")
 script = ExtResource("15_klsm4")
+
+[node name="Panel" type="Panel" parent="Lock/Lock 3"]
+offset_left = 1366.0
+offset_top = 1004.0
+offset_right = 1477.0
+offset_bottom = 1032.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_xc54d")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Lock/Lock 3/Panel"]
+layout_mode = 0
+offset_left = -9.0
+offset_top = -6.0
+offset_right = 124.0
+offset_bottom = 34.0
+theme_override_fonts/normal_font = ExtResource("37_pnh27")
+text = "PRESS <F>"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Lock 4" type="StaticBody2D" parent="Lock"]
 position = Vector2(355, 336)
@@ -1499,6 +1486,24 @@ scale = Vector2(0.55, 0.55)
 texture = ExtResource("10_ooyls")
 script = ExtResource("16_ajr4f")
 
+[node name="Panel" type="Panel" parent="Lock/Lock 4"]
+offset_left = 1366.0
+offset_top = 1004.0
+offset_right = 1477.0
+offset_bottom = 1032.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_xc54d")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Lock/Lock 4/Panel"]
+layout_mode = 0
+offset_left = -9.0
+offset_top = -6.0
+offset_right = 124.0
+offset_bottom = 34.0
+theme_override_fonts/normal_font = ExtResource("37_pnh27")
+text = "PRESS <F>"
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [node name="Lock 5" type="StaticBody2D" parent="Lock"]
 position = Vector2(-987, 98)
 physics_material_override = SubResource("PhysicsMaterial_4th5l")
@@ -1525,8 +1530,26 @@ scale = Vector2(0.55, 0.55)
 texture = ExtResource("10_ooyls")
 script = ExtResource("17_qwc8m")
 
+[node name="Panel" type="Panel" parent="Lock/Lock 5"]
+offset_left = 1366.0
+offset_top = 1004.0
+offset_right = 1477.0
+offset_bottom = 1032.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_xc54d")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Lock/Lock 5/Panel"]
+layout_mode = 0
+offset_left = -9.0
+offset_top = -6.0
+offset_right = 124.0
+offset_bottom = 34.0
+theme_override_fonts/normal_font = ExtResource("37_pnh27")
+text = "PRESS <F>"
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [node name="Lock 6" type="StaticBody2D" parent="Lock"]
-position = Vector2(-1153, -832)
+position = Vector2(-1153, -814)
 physics_material_override = SubResource("PhysicsMaterial_4th5l")
 script = ExtResource("18_gw8o0")
 
@@ -1551,8 +1574,26 @@ scale = Vector2(0.55, 0.55)
 texture = ExtResource("10_ooyls")
 script = ExtResource("21_e0ie1")
 
+[node name="Panel" type="Panel" parent="Lock/Lock 6"]
+offset_left = 1366.0
+offset_top = 1004.0
+offset_right = 1477.0
+offset_bottom = 1032.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_xc54d")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Lock/Lock 6/Panel"]
+layout_mode = 0
+offset_left = -9.0
+offset_top = -6.0
+offset_right = 124.0
+offset_bottom = 34.0
+theme_override_fonts/normal_font = ExtResource("37_pnh27")
+text = "PRESS <F>"
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [node name="Lock 7" type="StaticBody2D" parent="Lock"]
-position = Vector2(-1150, 515)
+position = Vector2(-254, 2853)
 physics_material_override = SubResource("PhysicsMaterial_4th5l")
 script = ExtResource("19_pf2h4")
 
@@ -1577,12 +1618,30 @@ scale = Vector2(0.55, 0.55)
 texture = ExtResource("10_ooyls")
 script = ExtResource("22_ey5ga")
 
+[node name="Panel" type="Panel" parent="Lock/Lock 7"]
+offset_left = 1366.0
+offset_top = 1004.0
+offset_right = 1477.0
+offset_bottom = 1032.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_xc54d")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Lock/Lock 7/Panel"]
+layout_mode = 0
+offset_left = -9.0
+offset_top = -6.0
+offset_right = 124.0
+offset_bottom = 34.0
+theme_override_fonts/normal_font = ExtResource("37_pnh27")
+text = "PRESS <F>"
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [node name="Start" type="Node2D" parent="." groups=["Objek"]]
 position = Vector2(-7, 29)
 script = ExtResource("1_xdevo")
 
 [node name="HomeScreen" parent="Start" instance=ExtResource("8_j4pol")]
-position = Vector2(911, 968)
+position = Vector2(853, 930.00006)
 scale = Vector2(0.3, 0.3)
 
 [node name="Player" type="CharacterBody2D" parent="Start" groups=["Objek"]]
@@ -1615,6 +1674,7 @@ drag_right_margin = 0.3
 drag_bottom_margin = 0.25
 editor_draw_limits = true
 editor_draw_drag_margin = true
+script = ExtResource("28_xc54d")
 
 [node name="Sprite2D" type="Sprite2D" parent="Start/Player"]
 y_sort_enabled = true
@@ -1639,51 +1699,305 @@ shape = SubResource("CircleShape2D_wwohq")
 [node name="Welcome" type="CanvasLayer" parent="."]
 script = ExtResource("28_2m60k")
 
-[node name="Welcome 1" type="TextureRect" parent="Welcome"]
+[node name="Welcome 1" type="Panel" parent="Welcome"]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_top = 443.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("28_m22ff")
 
-[node name="Welcome 2" type="TextureRect" parent="Welcome"]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("30_tcnu8")
+[node name="RichTextLabel" type="RichTextLabel" parent="Welcome/Welcome 1"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.075
+anchor_top = 0.074
+anchor_right = 0.901
+anchor_bottom = 0.89400005
+offset_left = 0.26838684
+offset_top = 16.83
+offset_right = -0.7836914
+offset_bottom = -31.158936
+theme_override_fonts/normal_font = ExtResource("37_pnh27")
+theme_override_font_sizes/normal_font_size = 36
+text = "<< Selamat datang di Village: Armageddon >>
 
-[node name="Welcome 3" type="TextureRect" parent="Welcome"]
+"
+autowrap_trim_flags = 128
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Close" type="RichTextLabel" parent="Welcome/Welcome 1"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.075
+anchor_top = 0.074
+anchor_right = 0.901
+anchor_bottom = 0.89400005
+offset_left = -24.400002
+offset_top = 120.83
+offset_right = -546.6204
+offset_bottom = 20.729996
+theme_override_fonts/normal_font = ExtResource("37_pnh27")
+theme_override_font_sizes/normal_font_size = 18
+text = "Press <Q> For Close"
+autowrap_trim_flags = 128
+vertical_alignment = 1
+
+[node name="Next" type="RichTextLabel" parent="Welcome/Welcome 1"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.075
+anchor_top = 0.074
+anchor_right = 0.901
+anchor_bottom = 0.89400005
+offset_left = 596.6
+offset_top = 120.83
+offset_right = 74.37952
+offset_bottom = 20.729996
+theme_override_fonts/normal_font = ExtResource("37_pnh27")
+theme_override_font_sizes/normal_font_size = 18
+text = "Press <E> For Next"
+autowrap_trim_flags = 128
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="Welcome 2" type="Panel" parent="Welcome"]
+visible = false
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_top = 441.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("31_qiruo")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Welcome/Welcome 2"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.033
+anchor_top = 0.18400002
+anchor_right = 0.9710001
+anchor_bottom = 0.89300007
+offset_left = -0.01599884
+offset_top = -35.088013
+offset_right = 0.40795898
+offset_bottom = -34.951935
+theme_override_fonts/normal_font = ExtResource("37_pnh27")
+theme_override_font_sizes/normal_font_size = 24
+text = "<< Sekarang Anda berada disebuah labirin, yang harus Anda lakukan hanya keluar dari labirin ini tanpa diserang oleh WereWolf. Sekali saja Anda diserang WereWolf Anda akan langsung mati dan dikembalikan ke titik awal >>
+"
+autowrap_trim_flags = 128
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Close" type="RichTextLabel" parent="Welcome/Welcome 2"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.075
+anchor_top = 0.074
+anchor_right = 0.901
+anchor_bottom = 0.89400005
+offset_left = -24.400002
+offset_top = 115.681984
+offset_right = -546.6204
+offset_bottom = 15.58197
+theme_override_fonts/normal_font = ExtResource("37_pnh27")
+theme_override_font_sizes/normal_font_size = 18
+text = "Press <Q> For Close"
+autowrap_trim_flags = 128
+vertical_alignment = 1
+
+[node name="Next" type="RichTextLabel" parent="Welcome/Welcome 2"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.075
+anchor_top = 0.074
+anchor_right = 0.901
+anchor_bottom = 0.89400005
+offset_left = 596.6
+offset_top = 115.681984
+offset_right = 74.37952
+offset_bottom = 15.58197
+theme_override_fonts/normal_font = ExtResource("37_pnh27")
+theme_override_font_sizes/normal_font_size = 18
+text = "Press <E> For Next"
+autowrap_trim_flags = 128
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="Welcome 3" type="Panel" parent="Welcome"]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 379.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Welcome/Welcome 3"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.033
+anchor_top = 0.18400002
+anchor_right = 0.9710001
+anchor_bottom = 0.89300007
+offset_left = -0.01599884
+offset_top = -0.088012695
+offset_right = 0.40795898
+offset_bottom = 0.048065186
+theme_override_fonts/normal_font = ExtResource("37_pnh27")
+theme_override_font_sizes/normal_font_size = 24
+text = "<< Jawab pertanyaan dari quiz yang ada di dalam labirin ini untuk membuka jalan yang terkunci. Jawaban hanya bisa dijawab sekali dan apabila jawaban salah maka kunci tidak akan bisa dibuka lagi. Anda harus mengulangi game apabila salah menjawab soal. Berhati-hatilah... >>
+
+<< Tekan <R> untuk Restart Game >>"
+autowrap_trim_flags = 128
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Close" type="RichTextLabel" parent="Welcome/Welcome 3"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.075
+anchor_top = 0.074
+anchor_right = 0.901
+anchor_bottom = 0.89400005
+offset_left = -24.400002
+offset_top = 156.09401
+offset_right = -546.6204
+offset_bottom = 55.994003
+theme_override_fonts/normal_font = ExtResource("37_pnh27")
+theme_override_font_sizes/normal_font_size = 18
+text = "Press <Q> For Close"
+autowrap_trim_flags = 128
+vertical_alignment = 1
+
+[node name="Next" type="RichTextLabel" parent="Welcome/Welcome 3"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.075
+anchor_top = 0.074
+anchor_right = 0.901
+anchor_bottom = 0.89400005
+offset_left = 596.6
+offset_top = 156.09401
+offset_right = 74.37952
+offset_bottom = 55.994003
+theme_override_fonts/normal_font = ExtResource("37_pnh27")
+theme_override_font_sizes/normal_font_size = 18
+text = "Press <E> For Next"
+autowrap_trim_flags = 128
+horizontal_alignment = 2
+vertical_alignment = 1
 
 [node name="Tutorial" type="CanvasLayer" parent="."]
 scale = Vector2(0.465741, 0.465741)
 transform = Transform2D(0.465741, 0, 0, 0.465741, 0, 0)
 script = ExtResource("11_fyw38")
 
-[node name="Tutorial" type="TextureRect" parent="Tutorial"]
-visible = false
+[node name="Tutorial" type="Panel" parent="Tutorial"]
 anchors_preset = -1
-anchor_left = 0.088
-anchor_top = 0.122
-anchor_right = 2.155
-anchor_bottom = 2.114
-offset_left = -0.376007
-offset_top = -0.0560074
-offset_right = -0.560303
-offset_bottom = 0.12793
+anchor_right = 2.1750002
+anchor_bottom = 2.187
+offset_right = 0.084472656
+offset_bottom = -0.0793457
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("11_77umb")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Tutorial/Tutorial"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.075
+anchor_top = 0.074
+anchor_right = 0.49
+anchor_bottom = 0.74500006
+offset_left = 1.019867
+offset_top = 135.61186
+offset_right = 1.1164551
+offset_bottom = 135.9425
+theme_override_fonts/normal_font = ExtResource("37_pnh27")
+theme_override_font_sizes/normal_font_size = 48
+text = "Movement : 
+UP = W
+DOWN = S
+RIGHT = D
+LEFT = A
+
+Play :
+ENTER
+
+INTERACT :
+F
+"
+autowrap_trim_flags = 128
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RichTextLabel3" type="RichTextLabel" parent="Tutorial/Tutorial"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.074
+anchor_right = 0.92100006
+anchor_bottom = 0.70000005
+offset_left = -580.79504
+offset_top = 1063.1661
+offset_right = -562.13025
+offset_bottom = 334.95007
+theme_override_fonts/normal_font = ExtResource("37_pnh27")
+theme_override_font_sizes/normal_font_size = 48
+text = "Press <ESC> For Exit"
+autowrap_trim_flags = 128
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="Tutorial/Tutorial"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.074
+anchor_right = 0.92100006
+anchor_bottom = 0.70000005
+offset_left = 18.250366
+offset_top = 157.08302
+offset_right = 3.3127441
+offset_bottom = 167.47485
+theme_override_fonts/normal_font = ExtResource("37_pnh27")
+theme_override_font_sizes/normal_font_size = 48
+text = "Tutorial : 
+T
+
+Restart :
+R
+
+Zoom In & Zoom Out :
+Scrool Mouse
+
+Quit :
+ALT + F4"
+autowrap_trim_flags = 128
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RichTextLabel4" type="RichTextLabel" parent="Tutorial/Tutorial"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.074
+anchor_right = 0.92100006
+anchor_bottom = 0.70000005
+offset_left = -580.79504
+offset_top = 32.550247
+offset_right = -562.13025
+offset_bottom = -695.6658
+theme_override_fonts/normal_font = ExtResource("37_pnh27")
+theme_override_font_sizes/normal_font_size = 48
+text = "Key Tutorial"
+autowrap_trim_flags = 128
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Quiz 1" type="Panel" parent="Tutorial"]
+visible = false
 anchors_preset = -1
 anchor_left = 0.309
 anchor_top = 0.315
@@ -1701,16 +2015,36 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_pnh27")
 script = ExtResource("16_qhahr")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Tutorial/Quiz 1"]
-layout_mode = 0
-offset_right = 1910.9335
-offset_bottom = 1073.5581
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.075
+anchor_top = 0.074
+anchor_right = 0.901
+anchor_bottom = 0.89400005
+offset_left = 0.26838684
+offset_top = 0.3134613
+offset_right = -0.7836914
+offset_bottom = -0.15893555
 theme_override_fonts/normal_font = ExtResource("37_pnh27")
-theme_override_font_sizes/normal_font_size = 36
-text = "TEXT TEXT TEXT"
+theme_override_font_sizes/normal_font_size = 48
+text = "\"                                                                                                            '=
+
+Korupsi adalah perbuatan …
+
+1. Menolong orang lain
+2. Belajar dengan rajin
+3. Mengambil barang yang bukan miliknya
+4. Menabung di sekolah
+
+(jawab dengan mengetikkan angka 1, 2, 3 atau 4 di keyboard)
+
+=                                                                                                            ''"
+autowrap_trim_flags = 128
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Quiz 2" type="Panel" parent="Tutorial"]
+visible = false
 anchors_preset = -1
 anchor_left = 0.304
 anchor_top = 0.325
@@ -1722,19 +2056,39 @@ offset_right = 0.21411133
 offset_bottom = 0.026000977
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ds8mp")
 script = ExtResource("20_oi85c")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Tutorial/Quiz 2"]
-layout_mode = 0
-offset_right = 1910.9335
-offset_bottom = 1073.5581
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.054
+anchor_top = 0.115
+anchor_right = 0.929
+anchor_bottom = 0.915
+offset_left = -0.07298279
+offset_top = -0.10734558
+offset_right = -0.3416748
+offset_bottom = -0.10736084
 theme_override_fonts/normal_font = ExtResource("37_pnh27")
-theme_override_font_sizes/normal_font_size = 36
-text = "TEXT TEXT TEXT"
+theme_override_font_sizes/normal_font_size = 48
+text = "\"                                                                                                            '=
+
+Perbuatan korupsi dapat merugikan …
+
+1. Banyak orang
+2. Satu orang saja
+3. Hewan peliharaan
+4. Benda mati
+
+(jawab dengan mengetikkan angka 1, 2, 3 atau 4 di keyboard)
+
+=                                                                                                            ''"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Quiz 3" type="Panel" parent="Tutorial"]
+visible = false
 anchors_preset = -1
 anchor_left = 0.312
 anchor_top = 0.329
@@ -1746,19 +2100,39 @@ offset_right = 0.3708496
 offset_bottom = -0.17712402
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_pbwgg")
 script = ExtResource("22_8j0x5")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Tutorial/Quiz 3"]
-layout_mode = 0
-offset_right = 1910.9335
-offset_bottom = 1073.5581
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.065000005
+anchor_top = 0.081
+anchor_right = 0.94900006
+anchor_bottom = 0.938
+offset_left = 0.1858902
+offset_top = -0.20269775
+offset_right = 0.28320313
+offset_bottom = 0.0073242188
 theme_override_fonts/normal_font = ExtResource("37_pnh27")
-theme_override_font_sizes/normal_font_size = 36
-text = "TEXT TEXT TEXT"
+theme_override_font_sizes/normal_font_size = 48
+text = "\"                                                                                                            '=
+
+Sikap yang harus kita lakukan agar tidak melakukan korupsi adalah …
+
+1. Malas dan diam saja
+2. Jujur dan bertanggung jawab
+3. Berbohong pada guru	
+4. Mengambil barang teman
+
+(jawab dengan mengetikkan angka 1, 2, 3 atau 4 di keyboard)
+
+=                                                                                                            ''"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Quiz 4" type="Panel" parent="Tutorial"]
+visible = false
 anchors_preset = -1
 anchor_left = 0.325
 anchor_top = 0.352
@@ -1770,19 +2144,39 @@ offset_right = -0.099853516
 offset_bottom = 0.026000977
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ndmee")
 script = ExtResource("29_7gvu3")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Tutorial/Quiz 4"]
-layout_mode = 0
-offset_right = 1910.9335
-offset_bottom = 1073.5581
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.053000003
+anchor_top = 0.078
+anchor_right = 0.93700004
+anchor_bottom = 0.9110001
+offset_left = 0.29373932
+offset_top = -0.45131683
+offset_right = 0.6315918
+offset_bottom = 0.21722412
 theme_override_fonts/normal_font = ExtResource("37_pnh27")
-theme_override_font_sizes/normal_font_size = 36
-text = "TEXT TEXT TEXT"
+theme_override_font_sizes/normal_font_size = 48
+text = "\"                                                                                                            '=
+
+Bantuan bencana alam seharusnya digunakan untuk …
+
+1. Kepentingan pribadi
+2. Disimpan sendiri
+3. Dijual kembali
+4. Dibagi kepada korban bencana
+
+(jawab dengan mengetikkan angka 1, 2, 3 atau 4 di keyboard)
+
+=                                                                                                            ''"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Quiz 5" type="Panel" parent="Tutorial"]
+visible = false
 anchors_preset = -1
 anchor_left = 0.328
 anchor_top = 0.367
@@ -1794,19 +2188,39 @@ offset_right = -0.41357422
 offset_bottom = 0.026000977
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_lua15")
 script = ExtResource("31_ist6g")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Tutorial/Quiz 5"]
-layout_mode = 0
-offset_right = 1910.9335
-offset_bottom = 1073.5581
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.060000002
+anchor_top = 0.094000004
+anchor_right = 0.94500005
+anchor_bottom = 0.91
+offset_left = 0.5000534
+offset_top = 0.3890381
+offset_right = 0.8745117
+offset_bottom = 0.3088379
 theme_override_fonts/normal_font = ExtResource("37_pnh27")
-theme_override_font_sizes/normal_font_size = 36
-text = "TEXT TEXT TEXT"
+theme_override_font_sizes/normal_font_size = 48
+text = "\"                                                                                                            '=
+
+Contoh tindakan korupsi di sekolah adalah …
+
+1. Mengembalikan uang yang ditemukan
+2. Mengambil uang kas kelas tanpa izin
+3. Membantu teman belajar
+4. Membersihkan kelas bersama
+
+(jawab dengan mengetikkan angka 1, 2, 3 atau 4 di keyboard)
+
+=                                                                                                            ''"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Quiz 6" type="Panel" parent="Tutorial"]
+visible = false
 anchors_preset = -1
 anchor_left = 0.33
 anchor_top = 0.387
@@ -1818,19 +2232,39 @@ offset_right = -0.099853516
 offset_bottom = 0.2290039
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_qirsl")
 script = ExtResource("33_7y7b7")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Tutorial/Quiz 6"]
-layout_mode = 0
-offset_right = 1910.9335
-offset_bottom = 1073.5581
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.066
+anchor_top = 0.091000006
+anchor_right = 0.92700005
+anchor_bottom = 0.89800006
+offset_left = 0.69395447
+offset_top = -0.09017944
+offset_right = -0.6263428
+offset_bottom = 0.24493408
 theme_override_fonts/normal_font = ExtResource("37_pnh27")
-theme_override_font_sizes/normal_font_size = 36
-text = "TEXT TEXT TEXT"
+theme_override_font_sizes/normal_font_size = 48
+text = "\"                                                                                                            '=
+
+Jika melihat teman berbuat curang, sikap kita sebaiknya …
+
+1. Ikut melakukan
+2. Membiarkannya
+3. Menegur dan melaporkan kepada guru
+4. Menertawakannya
+
+(jawab dengan mengetikkan angka 1, 2, 3 atau 4 di keyboard)
+
+=                                                                                                            ''"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Quiz 7" type="Panel" parent="Tutorial"]
+visible = false
 anchors_preset = -1
 anchor_left = 0.328
 anchor_top = 0.364
@@ -1842,20 +2276,39 @@ offset_right = -0.5703125
 offset_bottom = -0.0126953125
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_yw735")
 script = ExtResource("35_txmf3")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Tutorial/Quiz 7"]
-layout_mode = 0
-offset_right = 1910.9335
-offset_bottom = 1073.5581
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.058000002
+anchor_top = 0.087000005
+anchor_right = 0.94600004
+anchor_bottom = 0.91800004
+offset_left = -0.21726227
+offset_top = -0.06288147
+offset_right = -0.86047363
+offset_bottom = -0.4100952
 theme_override_fonts/normal_font = ExtResource("37_pnh27")
-theme_override_font_sizes/normal_font_size = 36
-text = "TEXT TEXT TEXT"
+theme_override_font_sizes/normal_font_size = 48
+text = "\"                                                                                                            '=
+
+Akibat dari korupsi adalah …
+
+1. Banyak orang menderita
+2. Negara menjadi maju
+3. Semua orang senang
+4. Kehidupan menjadi mudah
+
+(jawab dengan mengetikkan angka 1, 2, 3 atau 4 di keyboard)
+
+=                                                                                                            ''"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Finish" type="StaticBody2D" parent="."]
-position = Vector2(84, 2169)
+position = Vector2(83, 2183)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Finish"]
 position = Vector2(989, 1893)
@@ -1865,6 +2318,24 @@ shape = SubResource("RectangleShape2D_cnekk")
 position = Vector2(991, 1894)
 scale = Vector2(0.675, 0.675)
 texture = ExtResource("48_qarcs")
+
+[node name="Panel" type="Panel" parent="Finish"]
+offset_left = 932.0
+offset_top = 1880.0
+offset_right = 1043.0
+offset_bottom = 1908.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_xc54d")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Finish/Panel"]
+layout_mode = 0
+offset_left = -9.0
+offset_top = -6.0
+offset_right = 124.0
+offset_bottom = 34.0
+theme_override_fonts/normal_font = ExtResource("37_pnh27")
+text = "FINISH"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Sound" type="Node2D" parent="."]
 

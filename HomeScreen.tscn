@@ -1,48 +1,44 @@
-[gd_scene load_steps=5 format=3 uid="uid://bf3ui78iw3aqr"]
+[gd_scene load_steps=2 format=3 uid="uid://bf3ui78iw3aqr"]
 
-[ext_resource type="Texture2D" uid="uid://cib15vmbojhgs" path="res://Add.png" id="2_1adml"]
-[ext_resource type="Texture2D" uid="uid://dcw4qg44n5jls" path="res://Home Screen/UI.png" id="2_x7i23"]
+[ext_resource type="FontFile" uid="uid://byukh0u431up0" path="res://Fonts/ari-w9500-display.ttf" id="1_bu243"]
 
-[sub_resource type="Animation" id="Animation_iiriv"]
-resource_name = "Shrink"
-loop_mode = 1
-step = 0.2
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:scale")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0.2, 0.4, 0.6, 0.8, 1),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
-"update": 0,
-"values": [Vector2(0.59, 0.59), Vector2(0.6, 0.6), Vector2(0.59, 0.59), Vector2(0.58, 0.58), Vector2(0.57, 0.57)]
-}
+[node name="HomeScreen" type="Node2D"]
 
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_sa0jh"]
-_data = {
-&"Shrink": SubResource("Animation_iiriv")
-}
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1164.0
+offset_bottom = 646.0
 
-[node name="HomeScreen" type="Sprite2D"]
-position = Vector2(-275, 307)
+[node name="RichTextLabel" type="RichTextLabel" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.989
+anchor_bottom = 1.003
+offset_top = 83.0
+offset_right = -0.19604492
+offset_bottom = -155.93799
+theme_override_fonts/normal_font = ExtResource("1_bu243")
+theme_override_font_sizes/normal_font_size = 64
+text = "VILLAGE: ARMAGEDDON"
+autowrap_trim_flags = 128
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="Ui" type="Sprite2D" parent="."]
-position = Vector2(399, 187)
-scale = Vector2(0.57, 0.57)
-texture = ExtResource("2_x7i23")
-
-[node name="Sprite2D" type="Sprite2D" parent="."]
-
-[node name="Add" type="Sprite2D" parent="."]
-position = Vector2(404, 233)
-scale = Vector2(0.425463, 0.425463)
-texture = ExtResource("2_1adml")
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-root_node = NodePath("../Ui")
-libraries = {
-&"": SubResource("AnimationLibrary_sa0jh")
-}
-autoplay = "Shrink"
+[node name="RichTextLabel2" type="RichTextLabel" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.989
+anchor_bottom = 1.003
+offset_left = 2.0
+offset_top = 278.0
+offset_right = 1.8039551
+offset_bottom = 39.06201
+theme_override_fonts/normal_font = ExtResource("1_bu243")
+theme_override_font_sizes/normal_font_size = 32
+text = "Press <ENTER> To Play
+Press <T> For Tutorial
+Press <ALT + F4> To Exit"
+autowrap_trim_flags = 128
+horizontal_alignment = 1
+vertical_alignment = 1
