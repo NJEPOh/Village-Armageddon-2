@@ -1851,7 +1851,7 @@ position = Vector2(11, 14)
 script = ExtResource("1_xdevo")
 
 [node name="HomeScreen" parent="Start" instance=ExtResource("8_j4pol")]
-position = Vector2(853, 930.00006)
+position = Vector2(839, 957.00006)
 scale = Vector2(0.3, 0.3)
 
 [node name="Player" type="CharacterBody2D" parent="Start" groups=["Objek"]]
@@ -2613,11 +2613,13 @@ autoplay = true
 script = ExtResource("61_dy1at")
 
 [node name="Menu" type="AudioStreamPlayer2D" parent="Sound"]
+scale = Vector2(1.4982194, 59.042454)
 stream = ExtResource("48_w250u")
 autoplay = true
 script = ExtResource("53_pbwgg")
 
 [node name="Game" type="AudioStreamPlayer2D" parent="Sound"]
+scale = Vector2(8.24, 1)
 stream = ExtResource("50_3h3yf")
 autoplay = true
 script = ExtResource("55_ndmee")
