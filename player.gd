@@ -4,7 +4,7 @@ extends CharacterBody2D
 
 var is_paused = false
 
-@export var speed = 200
+@export var speed = 500
 @onready var animations = $AnimationPlayer
 
 func handleInput():

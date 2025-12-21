@@ -180,11 +180,12 @@ func _saat_masuk(body: Node2D) -> void:
 		$Start/Player.set_process(false)
 		
 		$Sound/Finish.play()
-		$Sound/GameMusic.stop()
+		$Sound/Game.stop()
 		$Sound/Walking.set_process_input(false)
 		$Finish/CollisionShape2D.queue_free()
 		$Welcome.hide()
 		$Start/Player.hide()
+		
 		
 		# Membuat Timer secara dinamis
 		 # Buat Timer secara dinamis
