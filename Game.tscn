@@ -1536,6 +1536,7 @@ position = Vector2(1819, 2651)
 position = Vector2(1576, 3923)
 
 [node name="Lock" type="Node2D" parent="."]
+visible = false
 
 [node name="Lock 1" type="StaticBody2D" parent="Lock"]
 position = Vector2(1, 2)
@@ -2227,6 +2228,7 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_pnh27")
 script = ExtResource("16_qhahr")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Tutorial/Quiz 1"]
+visible = false
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.075
