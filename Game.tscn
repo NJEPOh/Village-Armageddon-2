@@ -619,6 +619,7 @@ texture_region_size = Vector2i(32, 32)
 3:1/0 = 0
 3:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
 4:1/0 = 0
+4:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
 5:1/0 = 0
 5:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(16, 16, 16, -16, -16, -16, -16, 16)
 6:1/0 = 0
@@ -1871,6 +1872,7 @@ position = Vector2(1422, 989.5)
 shape = SubResource("RectangleShape2D_pnue6")
 
 [node name="F" type="Sprite2D" parent="Lock/Lock 1"]
+visible = false
 position = Vector2(1422, 1017)
 scale = Vector2(0.55, 0.55)
 texture = ExtResource("10_ooyls")
@@ -2145,6 +2147,7 @@ position = Vector2(11, 14)
 script = ExtResource("1_xdevo")
 
 [node name="HomeScreen" parent="Start" instance=ExtResource("8_j4pol")]
+visible = false
 position = Vector2(839, 957.00006)
 scale = Vector2(0.3, 0.3)
 
@@ -2205,6 +2208,7 @@ shape = SubResource("CircleShape2D_wwohq")
 script = ExtResource("28_2m60k")
 
 [node name="Welcome 1" type="Panel" parent="Welcome"]
+visible = false
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -2268,6 +2272,7 @@ horizontal_alignment = 2
 vertical_alignment = 1
 
 [node name="Welcome 2" type="Panel" parent="Welcome"]
+visible = false
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -2330,6 +2335,7 @@ horizontal_alignment = 2
 vertical_alignment = 1
 
 [node name="Welcome 3" type="Panel" parent="Welcome"]
+visible = false
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -2398,6 +2404,7 @@ transform = Transform2D(0.465741, 0, 0, 0.465741, 0, 0)
 script = ExtResource("11_fyw38")
 
 [node name="Tutorial" type="Panel" parent="Tutorial"]
+visible = false
 anchors_preset = -1
 anchor_right = 2.1750002
 anchor_bottom = 2.187
@@ -2407,6 +2414,7 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Tutorial/Tutorial"]
+visible = false
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.075
@@ -2436,6 +2444,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="RichTextLabel3" type="RichTextLabel" parent="Tutorial/Tutorial"]
+visible = false
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.5
@@ -2454,6 +2463,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="RichTextLabel2" type="RichTextLabel" parent="Tutorial/Tutorial"]
+visible = false
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.5
@@ -2482,6 +2492,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="RichTextLabel4" type="RichTextLabel" parent="Tutorial/Tutorial"]
+visible = false
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.5
@@ -2500,6 +2511,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Quiz 1" type="Panel" parent="Tutorial"]
+visible = false
 anchors_preset = -1
 anchor_left = 0.309
 anchor_top = 0.315
@@ -2546,6 +2558,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Quiz 2" type="Panel" parent="Tutorial"]
+visible = false
 anchors_preset = -1
 anchor_left = 0.304
 anchor_top = 0.325
@@ -2589,6 +2602,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Quiz 3" type="Panel" parent="Tutorial"]
+visible = false
 anchors_preset = -1
 anchor_left = 0.312
 anchor_top = 0.329
@@ -2632,6 +2646,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Quiz 4" type="Panel" parent="Tutorial"]
+visible = false
 anchors_preset = -1
 anchor_left = 0.325
 anchor_top = 0.352
@@ -2675,6 +2690,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Quiz 5" type="Panel" parent="Tutorial"]
+visible = false
 anchors_preset = -1
 anchor_left = 0.328
 anchor_top = 0.367
@@ -2733,6 +2749,7 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_qirsl")
 script = ExtResource("33_7y7b7")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Tutorial/Quiz 6"]
+visible = false
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.066
